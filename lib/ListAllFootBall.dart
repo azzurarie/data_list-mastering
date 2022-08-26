@@ -56,7 +56,7 @@ class _ListAllFootbalState extends State<ListAllFootbal> {
                     .toString();
                 return InkWell(
                   onTap: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => Detail(name : name,stadium : stadium),));
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => Detail(teams : premiereLeagueModel!.teams![index]),));
                   },
                   child: Card(
                     child: Container(
